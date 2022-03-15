@@ -1,0 +1,505 @@
+@charset "UTF-8";
+
+/*------------------------------------
+2022.04.01 ver, gwlee@aekyung.kr 수정
+------------------------------------*/
+
+
+/****************
+**** default ****
+****************/
+
+
+*{
+    word-break: keep-all;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+/****************
+***** header ****
+****************/
+
+
+/* header */
+header{
+    width: 100%;
+    height: 100px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+    z-index: 10001;
+}
+header .hdWrap{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+header .hdWrap:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header .hdWrap > h1{
+    width: 190px;
+    height: 100px;
+    text-indent: -999em;
+    float: left;
+    transition: 0.3s ease;
+    background:url('../images/logo.png') no-repeat left center;
+}
+header .hdWrap > h1 > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+header .hdWrap > nav.df{
+    float: right;
+}
+header .hdWrap > nav.df > ul{
+    font-size: 0;
+}
+header .hdWrap > nav.df > ul > li{
+    padding: 0 40px;
+    position: relative;
+    display: inline-block;
+}
+header .hdWrap > nav.df > ul > li > button{
+    height: 100px;
+    padding-top: 10px;
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+header .hdWrap > nav.df > ul > li > button:before {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    bottom: -17px;
+    border-color: #f15922 transparent transparent transparent;
+    border-width: 7px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+header .hdWrap > nav.df > ul > li > button.ho:before{
+    opacity: 1;
+}
+header .hdWrap > nav.df .subMenu{
+    position: absolute;
+    top: 100px;
+    display: none;
+    font-size: 0;
+    background: transparent;
+}
+header .hdWrap > nav.df .subMenu > li{
+    height: 60px;
+    padding-left: 40px;
+    display: inline-block;
+}
+header .hdWrap > nav.df .subMenu > li:first-child{
+    padding-left: 0;
+}
+header .hdWrap > nav.df .subMenu > li > a {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+header .hdWrap > nav.df .subMenu > li > a:hover{
+    color: #f15922;
+    font-weight: 500;
+}
+header .hdWrap > nav.df > ul > li.right{
+    position: static;
+}
+header .hdWrap > nav.df > ul > li.right .subMenu{
+    margin-right: 20px;
+    left: auto;
+    right: 0;
+}
+header.on {
+  background: #fff;
+}
+header.on .hdWrap > nav.df > ul > li > button {
+  color: #2a2a2a;
+}
+header.on .hdWrap > h1{
+    background:url('../images/logo_on.png') no-repeat left center;
+}
+header .hdWrap > nav.df > ul > li:hover > button{
+  color: #f15922;
+  font-weight: 500;
+}
+header .hdBg{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 100px;
+    display: none;
+    background: rgba(0,0,0,0.6);
+    border-top: 3px solid #f15922;
+    z-index: 1;
+}
+header .hdWrap > .navBtn{
+    display: none;
+}
+header .hdWrap > nav.mob{
+    display: none;
+}
+
+/* header.wh */
+/* header.wh{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+header.wh .hdWrap > h1{
+    margin-top: 10px;
+    color: #009688;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+header.wh .hdWrap > nav.df > ul > li > button{
+    height: 60px;
+    color: #777;
+    font-size: 18px;
+}
+header.wh .hdWrap > nav.df > ul > li > button:before{
+    bottom: 0;
+}
+header.wh .hdWrap > nav.df > ul > li > button:after{
+    bottom: 0;
+    border-color: transparent transparent #607D8B transparent;
+}
+header.wh .hdWrap > nav.df > ul > li:hover > button{
+    color: #009688;
+}
+header.wh .hdWrap > nav.df .subMenu{
+    top: 60px;
+}
+header.wh .hdWrap > nav.df .subMenu > li > a{
+    color: #fff;
+}
+header.wh .hdWrap > nav.df .subMenu > li > a:hover{
+    color: #dbeaf1;
+}
+header.wh .hdWrap > nav.df .subMenu > li > a:hover:after{
+    border-color: #dbeaf1;
+}
+header.wh .hdBg{
+    top: 60px;
+    background: #607D8B;
+    border: 0;
+}
+header.wh + section{
+    margin-top: 180px;
+} */
+
+/****************
+**** footer ****
+****************/
+
+
+/* footer */
+footer {
+  width: 100%;
+  height: 60px;
+  z-index:99;
+  position:absolute;
+	bottom:30px;
+}
+footer .fWrap {
+  width: 540px;
+  height: 100%;
+  margin: 0 auto;
+}
+footer .fWrap h1 {
+  width: 55px;
+  height: 100%;
+  margin-right: 50px;
+  float:left;
+  text-indent: -999em;
+  background:url('../images/flogo.png') no-repeat;
+}
+footer .fConWrap {
+  width: 433px;
+  height: 100%;
+  float: left;
+}
+footer .fConWrap .address {
+  color: #ccc;
+  font-size: 12px;
+  line-height: 14px;
+}
+footer .fConWrap .address > i {
+  width: 1px;
+  height: 6px;
+  margin: 0 10px;
+  background: #ccc;
+  position: relative;
+  top: 7px;
+}
+footer .copyright {
+  margin-top: 5px;
+  color: #999;
+	font-size: 12px;
+	display: block;
+}
+
+/****************
+**** footer ****
+****************/
+
+
+/* ~ 1199px */
+@media screen and (max-width: 1199px) {
+
+    header .hdWrap {
+      width: 100%;
+      padding: 0 20px;
+    }
+    header .hdWrap > nav.df > ul > li{
+        padding: 0 10px;
+    }
+    header .hdWrap > nav.df > ul > li > button{
+        font-size: 20px;
+    }
+
+}
+
+
+/* ~ 799px */
+@media screen and (max-width: 799px) {
+
+    header {
+      height: 60px;
+    }
+    header .hdWrap {
+      padding: 0 30px;
+    }
+    header .hdWrap > h1,
+    header.wh .hdWrap > h1{
+      height: 60px;
+      background-size: 140px;
+      background-position: left 17px;
+    }
+    header .hdWrap > .navBtn {
+		display:block;
+		position:absolute;
+		top:7px;
+    right:30px;
+    bottom:0;
+		width: 25px;
+    height:50px;
+    z-index: 100;
+  	}
+    header .hdWrap > .navBtn span {
+      display:inline-block;
+      text-indent:-9999px;
+    }
+    header .hdWrap > .navBtn span {
+      display:block;
+      width: 24px;
+      height: 2px;
+      background:#fff;
+      position:absolute;
+      top:50%;
+      left:0;
+      margin-top:-1px;
+      transition:0.2s ease;
+      -webkit-transition:0.2s ease;
+      -moz-transition:0.2s ease;
+      -o-transition:0.2s ease;
+    }
+    header .hdWrap > .navBtn span::before,
+    header .hdWrap > .navBtn span::after {
+      display:block;
+      content:'';
+      width:24px;
+      height:2px;
+      background:#fff;
+      position:absolute;
+      left:0;
+      transition:0.2s ease;
+      -webkit-transition:0.2s ease;
+      -moz-transition:0.2s ease;
+      -o-transition:0.2s ease;
+    }
+    header .hdWrap > .navBtn span::before {
+      top:0;
+      margin-top:-8px;
+    }
+    header .hdWrap > .navBtn span::after {
+      bottom:0;
+      margin-bottom:-8px;
+    }
+    header .hdWrap > .navBtn.on span {
+      background:#e7302a;
+    }
+    header .hdWrap > .navBtn.on span {
+      background:transparent;
+    }
+    header .hdWrap > .navBtn.on span::before {
+      margin-top:0;
+      transform:rotate(45deg);
+      -webkit-transform:rotate(45deg);
+      -moz-transform:rotate(45deg);
+      -o-transform:rotate(45deg);
+    }
+    header .hdWrap > .navBtn.on span::after {
+      margin-bottom:0;
+      transform:rotate(-45deg);
+      -webkit-transform:rotate(-45deg);
+      -moz-transform:rotate(-45deg);
+      -o-transform:rotate(-45deg);
+    }
+    header .hdWrap > nav.mob{
+        width: 300px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        display: none;
+        float: none;
+        background: #fff;
+    }
+    header .hdWrap > nav.mob > .contents{
+        width: calc(100% + 20px);
+        height: 100%;
+        overflow-y: auto;
+    }
+    header .hdWrap > nav.mob > .contents .navBtnBg {
+      width: 100%;
+      height: 60px;
+      background: #f15922 url('../images/logo_mobBtn.png') no-repeat 30px center;
+      background-size: 50px;
+    }
+
+
+    .lnb {
+      width: 100%;
+      height: auto;
+    }
+    .lnb > li {
+      width: 100%;
+      height: auto;
+      min-height: 60px;
+      border-bottom: 1px solid #eee;
+      background: url('../images/btn_lnb_down.png') no-repeat 250px 27px;
+      background-size: 15px;
+    }
+    .lnb > li.on {
+      border-bottom: 0;
+      background: url('../images/btn_lnb_up.png') no-repeat 250px 27px;
+      background-size: 15px;
+    }
+    .lnb > li > a {
+      width: 100%;
+      height: 60px;
+      padding-left: 30px;
+      display: block;
+      font-size: 18px;
+      color: #2f2f2f;
+      font-weight: 400;
+      line-height: 60px;
+      position: relative;
+    }
+    .lnb > li.on > a,
+    .lnb > li > a:hover {
+      color: #f15922;
+      font-weight: 500;
+    }
+    .lnb .lnbConWrap {
+      display: none;
+    }
+    .lnbCon {
+      padding: 20px 30px;
+      border-top: 1px solid #f15922;
+      border-bottom: 1px solid #f15922;
+      background: #f2f2f2;
+    }
+    .lnbCon li {
+      height: 40px;
+      padding-left: 10px;
+    }
+    .lnbCon li > a {
+      height: 100%;
+      display: block;
+      font-size: 16px;
+      color: #454545;
+      line-height: 40px;
+      position: relative;
+      transition: ease 0.2s;
+    }
+    .lnbCon li > a:hover {
+      color: #f15922;
+    }
+
+    footer {
+      width: 100%;
+      height: 90px;
+      background: #333;
+      bottom: 0;
+    }
+    footer .fWrap {
+      width: 100%;
+      padding: 0 0;
+    }
+    footer .fWrap h1 {
+      width: 100%;
+      height: 23px;
+      margin: 0;
+      background:url('../images/flogo.png') no-repeat center;
+      background-size: 45px;
+      display: none;
+    }
+    footer .fConWrap {
+      width: 100%;
+      padding: 0 30px;
+      margin-top: 4px;
+      text-align: center;
+    }
+    footer .fConWrap .address {
+      color: #ccc;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 11px;
+    }
+
+}
+
+
+/* ~ 639px */
+@media screen and (max-width: 639px) {
+    header .hdWrap{
+    }
+}
+
+
+/* ~ 479px */
+@media screen and (max-width: 479px) {
+    header .hdWrap{
+    }
+}
+
+
+/* ~ 320px */
+@media screen and (max-width: 320px) {
+    header .hdWrap{
+    }
+}

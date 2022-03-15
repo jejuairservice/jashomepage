@@ -1,0 +1,274 @@
+
+{% load static %}
+
+ <!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+    <title>JAS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'main/images/favicon.ico' %} " />
+		<link rel="apple-touch-icon" sizes="57x57" href="{% static 'main/images/apple-icon-57x57.png' %} ">
+		<link rel="apple-touch-icon" sizes="60x60" href="{% static 'main/images/apple-icon-60x60.png' %} ">
+		<link rel="apple-touch-icon" sizes="72x72" href="{% static 'main/images/apple-icon-72x72.png' %} ">
+		<link rel="apple-touch-icon" sizes="76x76" href="{% static 'main/images/apple-icon-76x76.png' %} ">
+		<link rel="apple-touch-icon" sizes="114x114" href="{% static 'main/images/apple-icon-114x114.png' %} ">
+		<link rel="apple-touch-icon" sizes="120x120" href="{% static 'main/images/apple-icon-120x120.png' %} ">
+		<link rel="apple-touch-icon" sizes="144x144" href="{% static 'main/images/apple-icon-144x144.png' %} ">
+		<link rel="apple-touch-icon" sizes="152x152" href="{% static 'main/images/apple-icon-152x152.png' %} ">
+		<link rel="apple-touch-icon" sizes="180x180" href="{% static 'main/images/apple-icon-180x180.png' %} ">
+		<link rel="icon" type="image/png" sizes="192x192"  href="{% static 'main/images/android-icon-192x192.png' %} ">
+		<link rel="icon" type="image/png" sizes="32x32" href="{% static 'main/images/favicon-32x32.png' %} ">
+		<link rel="icon" type="image/png" sizes="96x96" href="{% static 'main/images/favicon-96x96.png' %} ">
+		<link rel="icon" type="image/png" sizes="16x16" href="{% static 'main/images/favicon-16x16.png' %} ">
+		<link rel="manifest" href="{% static 'main/images/manifest.json' %}">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="../images/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	
+		<link rel="stylesheet" href="{% static 'main/css/jquery-ui.css' %} ">
+		<link rel="stylesheet" href="{% static 'main/css/webfont.css' %} ">
+		<link rel="stylesheet" href="{% static 'main/css/common.css' %} ">
+		<link rel="stylesheet" href="{% static 'main/css/style.css' %} ">
+		<link rel="stylesheet" href="{% static 'main/css/main.css' %} ">
+		<link rel="stylesheet" href="{% static 'main/css/sub.css' %} ">
+	
+		<script type="text/javascript" src="{% static 'main/js/jquery-2.2.4.min.js' %} "></script>
+		<script type="text/javascript" src="{% static 'main/js/slide.js' %} "></script>
+		<script type="text/javascript" src="{% static 'main/js/jquery.fullPage.min.js' %} "></script>
+		<script type="text/javascript" src="{% static 'main/js/common.js' %} "></script>
+		<script type="text/javascript" src="{% static 'main/js/style.js' %} "></script>
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--
+		* 2022.04.01 ver, gwlee@aekyung.kr 수정
+    //-->
+
+  </head>
+  <body class="wrap mainWrap">
+	
+    <header>
+        <div class="hdWrap">
+            <h1><a href="/main/index">로고</a></h1>
+            <button class="navBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="df">
+                <ul>
+                    <li>
+                        <button onClick="window.location.href='/main/ceo_message'">회사소개</button>
+                        <ul class="subMenu">
+                            <li><a href="/main/ceo_message/">대표 인사말</a></li>
+                            <li><a href="/main/corporate_overview">기업개요</a></li>
+                            <li><a href="/main/ci">CI</a></li>
+                            <li><a href="/main/ideology_vision">이념 &amp; 비전</a></li>
+                            <li><a href="/main/jas_network">네트워크</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onClick="window.location.href='/main/business_introduction'">사업분야</button>
+                        <ul class="subMenu">
+                            <li><a href="/main/business_introduction">사업소개</a></li>
+                            <li><a href="/main/passenger">여객 운송</a></li>
+                            <li><a href="/main/ramp">램프 조업</a></li>
+                            <li><a href="/main/gse">장비 정비</a></li>
+                            <li><a href="/main/fuel">항공기 급유</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                      <button onClick="window.location.href='/main/safety_ramp'">품질관리</button>
+                      <ul class="subMenu">
+                        <li><a href="/main/safety_ramp">안전지킴이</a></li>
+                        <li><a href="/main/safety_test">장비 자격검정</a></li>
+                        <li><a href="/main/jascon">조업통제시스템</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                        <button onClick="window.location.href='/main/personnel_system'">채용정보</button>
+                        <ul class="subMenu">
+                          <li><a href="/main/personnel_system">인사제도</a></li>
+                          <li><a href="/main/incruit_anc">채용공고</a></li>
+                          <li><a href="/main/careers_info">채용정보</a></li>
+                          <li><a href="/main/hire_benefit">채용절차 및 복리후생</a></li>
+                        </ul>
+                    </li>
+                    <li> 
+                        <button onClick="window.location.href='html/faq.html'">기타문의</button>
+                        <ul class="subMenu">
+                            <li><a href="/main/faq">자주하는 질문</a></li>
+                            <li><a href="/main/co_map">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="mob">
+                <div class="contents">
+                  <div class="navBtnBg"></div>
+                  <ul class="lnb">
+                    <li>
+                      <a href="#">회사소개</a>
+                      <div class="lnbConWrap">
+                        <ul class="lnbCon">
+                          <li><a href="/main/ceo_message/">대표 인사말</a></li>
+                            <li><a href="/main/corporate_overview">기업개요</a></li>
+                            <li><a href="/main/ci">CI</a></li>
+                            <li><a href="/main/ideology_vision">이념 &amp; 비전</a></li>
+                            <li><a href="/main/jas_network">네트워크</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">사업분야</a>
+                      <div class="lnbConWrap">
+                        <ul class="lnbCon">
+                          <li><a href="/main/business_introduction">사업소개</a></li>
+                            <li><a href="/main/passenger">여객 운송</a></li>
+                            <li><a href="/main/ramp">램프 조업</a></li>
+                            <li><a href="/main/gse">장비 정비</a></li>
+                            <li><a href="/main/fuel">항공기 급유</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">품질관리</a>
+                      <div class="lnbConWrap">
+                        <ul class="lnbCon">
+                        <li><a href="/main/safety_ramp">안전지킴이</a></li>
+                        <li><a href="/main/safety_test">장비 자격검정</a></li>
+                        <li><a href="/main/jascon">조업통제시스템</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">채용정보</a>
+                      <div class="lnbConWrap">
+                        <ul class="lnbCon">
+                          <li><a href="/main/personnel_system">인사제도</a></li>
+								<li><a href="/main/incruit_anc">채용공고</a></li>
+								<li><a href="/main/careers_info">채용정보</a></li>
+								<li><a href="/main/hire_benefit">채용절차 및 복리후생</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">채용문의</a>
+                      <div class="lnbConWrap">
+                        <ul class="lnbCon">
+                          <li><a href="/main/faq">자주하는 질문</a></li>
+                          <li><a href="/main/co_map">찾아오시는길</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="hdBg"></div>
+    </header>
+
+    <div id="fullpage">
+        <div class="section section0" >
+            <div class="topgradation"></div>
+            <div id="slick_section0">
+                <div class="slick01"><div class="bgdot"></div><div class="bg"></div></div>
+                <div class="slick02"><div class="bgdot"></div><div class="bg"></div></div>
+                <div class="slick03"><div class="bgdot"></div><div class="bg"></div></div>
+            </div>
+            <button type="button" class="slick-pause paused">정지</button>
+        </div>
+    </div>
+
+    <div class="mainTitWrap">
+      <dl class="mainTit">
+          <dt>안전을 최우선 가치로 생각하는 사람들</dt>
+          <dd>우리는<span></span>입니다</dd>
+      </dl>
+
+      
+      <!--
+      <div class="mIcoWrap clear">
+          <ul class="clear">
+              <li>
+                <a href="/main/corporate_overview" title="기업개요"><i class="ico01"></i><span class="txt">기업개요</span></a>
+              </li>
+              <li>
+                <a href="/main/business_introduction" title="사업소개"><i class="ico02"></i><span class="txt">사업소개</span></a>
+              </li>
+          </ul>
+          <ul class="clear">
+              <li>
+                <a href="/main/personnel_system" title="인사제도"><i class="ico03"></i><span class="txt">인사제도</span></a>
+              </li>
+              <li>
+                <a href="/main/incruit_anc" title="채용공고"><i class="ico04"></i><span class="txt">채용공고</span></a>
+              </li>
+          </ul>
+      </div>
+-->
+
+    </div>
+
+	<footer>
+		<div class="fWrap">
+		  <h1>로고</h1>
+		  <div class="fConWrap">
+			<span class="address">
+			  JAS 홈페이지<i></i>FAQ<i></i>Q&A<i></i>대표번호 : 02-2665-3116<br>
+			  대표이사 : 장우영<i></i>사업자등록번호: 301-81-45573<br>인천광역시 중구 공항로 272, 2층 4-24-07호 2093호, 인천공항 제 1여객터미널 (운서동)
+			</span>
+  
+			<span class="copyright">Copyright ⓒ 2019 by JAS, CO., LTD. All rights reserved.</span>
+		  </div>
+		</div>
+		</footer>
+  
+	  <div class="fixBG"></div>
+  
+	  <script type="text/javascript">
+		  function allMenuClose() {
+		  $(".all_menu_box").stop().animate({"height":"0"},"fast",function(){
+			  $(this).removeClass("active");
+		  });
+	  }
+	  </script>
+  
+	  <script type="text/javascript">
+	  jQuery(document).ready(function($){
+		  $(window).scroll(function(){
+			  if ($(window).scrollTop() > 100)
+			  {
+				$(".top_btn").fadeIn("fast");
+			  } else {
+				$(".top_btn").fadeOut("fast");
+			  }
+		  });
+		  $(".top_btn a").click(function(){
+			  $("html, body").animate({scrollTop:0}, "ease-in-out");
+			  return false;
+		  });
+	  });
+  
+	  $('img.toResizeClass').each(function(){
+  
+		  var $img = $(this),
+			  imgWidth = $img.width(),
+			  imgHeight = $img.height();
+  
+		  if(imgWidth > imgHeight){
+			  $img.width(imgWidth * 0.3);
+		  } else {
+			  $img.height(imgHeight * 0.3);
+		  }
+	  });
+	  </script>
+  
+	</body>
+  </html>
+  
+

@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+/*------------------------------------
+2022.04.01 ver, gwlee@aekyung.kr 수정
+------------------------------------*/
+
+
+
+
+/****************
+***** reset *****
+****************/
+
+
+*{
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+}
+html,body,header,nav,section,article,aside,footer,
+table,th,td,div,dl,dt,dd,ol,ul,li,a,button,input,img,
+select,textarea,
+fieldset,form,label,legend,
+h1,h2,h3,h4,h5,h6,p,span,i,b,strong,em,sub,
+figcaption,figure{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', 'dotum', 'verdana', sans-serif;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+	vertical-align: baseline;
+	background: transparent;
+    border: 0;
+}
+section, article, aside, footer, header, nav, hgroup{
+    display: block;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+audio,
+canvas,
+progress,
+video{
+    display: inline-block;
+    vertical-align: baseline;
+}
+input,
+label{
+    vertical-align: middle;
+}
+input[type=submit],
+input[type=reset],
+input[type=button],
+button{
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button,
+input[type=time]::-webkit-inner-spin-button,
+input[type=time]::-webkit-outer-spin-button
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button,
+input[type=week]::-webkit-inner-spin-button,
+input[type=week]::-webkit-outer-spin-button,
+input[type=month]::-webkit-inner-spin-button,
+input[type=month]::-webkit-outer-spin-button
+input[type=datetime-local]::-webkit-inner-spin-button,
+input[type=datetime-local]::-webkit-outer-spin-button,
+input[type=search]::-webkit-inner-spin-button,
+input[type=search]::-webkit-outer-spin-button{
+    margin: 0;
+    -webkit-appearance: none;
+}
+i{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: text-top;
+}
+a{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:visited,
+a:focus,
+a:hover{
+    outline: none;
+    text-decoration: none;
+}
+ol,
+ul,
+li{
+    list-style: none;
+}
+hr{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+
+
+
+/****************
+***** common ****
+****************/
+
+
+/* clear */
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* text */
+.ell{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: inherit;
+}
+th.ell,
+td.ell{
+    display: table-cell;
+}
+.brk{
+    word-break: break-all;
+}
+
+
+/* input & button */
+input[type=text],
+input[type=password],
+input[type=file],
+input[type=email],
+input[type=number],
+input[type=tel],
+input[type=time],
+input[type=date],
+input[type=week],
+input[type=month],
+input[type=datetime-local],
+input[type=search],
+input[type=url],
+input[type=color]{
+    height: 30px;
+    padding: 0 5px;
+    line-height: 28px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+}
+::placeholder{
+    color: #687479;
+}
+::-webkit-input-placeholder{
+    color: #687479;
+}
+:-ms-input-placeholder{
+    color: #687479;
+}
+::-ms-input-placeholder{
+    color: #687479;
+}
+input[readonly]{
+    background: #e6e6e6;
+}
+
+input[type=file]{
+    padding-left: 0;
+}
+input[type=color]{
+    width: 35px;
+    cursor: pointer;
+}
+input[type=submit],
+input[type=reset],
+input[type=button]{
+    min-width: 100px;
+    height: 30px;
+    padding: 0 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background: #607d8b;
+    border-radius: 3px;
+}
+textarea{
+    width: 200px;
+    min-height: 30px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: none;
+}
+button.gr{
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background: transparent url(../images/sprite.png) no-repeat 0 -70px;
+}
+button.gr > span{
+    min-width: 100px;
+    height: 100%;
+    padding: 0 20px;
+    display: block;
+    line-height: 30px;
+    background: transparent url(../images/sprite.png) no-repeat right -100px;
+}
+button.topBtn{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    z-index: 999;
+}
+button.topBtn > span{
+    width: 0;
+    height: 0;
+    display: inline-block;
+    text-align: left;
+    text-indent: -9999px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 12px solid #999;
+}
+button.topBtn:hover > span{
+    border-bottom: 12px solid #f15922;
+}
+
+/* .fixBG */
+.fixBG{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background: rgba(0,0,0,0.65);
+    z-index: 10000;
+}
+.fixCont{
+    z-index: 10001 !important;
+}

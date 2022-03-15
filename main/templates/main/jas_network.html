@@ -1,0 +1,24 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block container %}
+<section>
+    <div class="subTitWrap sb02">
+      <div class="subTitBox">
+        <h3>네트워크</h3>
+        <p>JAS NETWORK</p>
+      </div>
+    </div>
+    <div class="subConWrap">
+      <div class="cntWrap busi">
+        <strong class="titStr">JAS의 지점을 소개합니다</strong>
+        <p class="busiTxt">JAS 지점 위치 안내도 입니다</p>
+        <div class="jasMap">
+          <img src="{% static 'main/images/jasMap.png' %}" alt="JAS 지점 위치 안내도">
+        </div>
+      </div>
+    </div> 
+    <br>
+  </section>
+ 
+{% endblock container %}

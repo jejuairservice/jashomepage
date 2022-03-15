@@ -1,0 +1,38 @@
+/*------------------------------------
+2022.04.01 ver, gwlee@aekyung.kr 수정
+------------------------------------*/
+
+
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: url(../fonts/NotoSans-Light.eot);
+	src: local('Noto Sans KR Light'), local('NotoSansKR-Light'), url(../fonts/NotoSans-Light.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/NotoSans-DemiLight.eot);
+	src: local('Noto Sans KR DemiLight'), local('NotoSansKR-DemiLight'), url(../fonts/NotoSans-DemiLight.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/NotoSans-Medium.eot);
+	src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'), url(../fonts/NotoSans-Medium.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 600;
+	src: url(../fonts/NotoSans-Bold.eot);
+	src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'), url(../fonts/NotoSans-Bold.woff) format('woff');
+}
