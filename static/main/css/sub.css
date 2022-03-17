@@ -162,7 +162,7 @@ h4.titb {
   padding-left: 35px;
   margin-top: 10px;
   margin-bottom: 15px;
-  color: #f85210;
+  color: #f85210; 
   font-size: 22px;
   font-weight: 600;
   background:url('../images/ico_tit_bg.png') no-repeat;
@@ -183,7 +183,7 @@ h4.titb {
   display: block;
   width: 100%;
 }
-
+ 
 .image.centered {
   display: block;
   margin: 0 0 2em 0;
