@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-!olxe6+$r_*m#b0@rq$d4auvi!srnx&16z#+dwxs1&hqw6sp!=
 DEBUG = False
 #DEBUG = True   # 배포할 때 false, 개발환경일 때 true
 
-# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['.ap-northeast-2.compute.amazonaws.com']
-ALLOWED_HOSTS = ['ec2-3-38-209-104.ap-northeast-2.compute.amazonaws.com', '3.38.209.104']
+# ALLOWED_HOSTS = ['ec2-3-38-209-104.ap-northeast-2.compute.amazonaws.com', '3.38.209.104']
 # Application definition
 
 INSTALLED_APPS = [
