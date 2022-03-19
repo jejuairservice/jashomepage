@@ -23,12 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!olxe6+$r_*m#b0@rq$d4auvi!srnx&16z#+dwxs1&hqw6sp!='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-#DEBUG = True   # 배포할 때 false, 개발환경일 때 true
+#DEBUG = False
+DEBUG = True   # 배포할 때 false, 개발환경일 때 true
 
 ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['.ap-northeast-2.compute.amazonaws.com']
-# ALLOWED_HOSTS = ['ec2-3-38-209-104.ap-northeast-2.compute.amazonaws.com', '3.38.209.104']
 # Application definition
 
 INSTALLED_APPS = [
@@ -122,6 +121,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_DIRS = [
+    os.path.join(BASE_DIR, 'main', 'static')
+]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
