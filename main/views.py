@@ -4,12 +4,14 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
     return render(request,'main/index.html')  # 템플릿 메인 속 index를 불러온다.
-
-
+  
+ 
 def doc_detail(request, doc):
     path_template = 'main/'
     if doc == 'ceo_message':
         path_template += 'ceo_message.html'
+    elif doc == 'index':
+        path_template += 'index.html'
     elif doc == 'corporate_overview':
         path_template += 'corporate_overview.html'
     elif doc == 'ci':
