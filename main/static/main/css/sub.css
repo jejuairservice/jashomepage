@@ -665,6 +665,8 @@ div.svcTxt{
 /* sb02 - 급유 현지*/
 .fuel1{ background: url('../images/fuel01.png') no-repeat center; }
 .fuel2{ background: url('../images/fuel02.png') no-repeat center; }
+.fuel3{ background: url('../images/fuel03.png') no-repeat center; }
+.fuel4{ background: url('../images/fuel04.png') no-repeat center; }
 
 /* JAScon */
 .jsc1{ background: url('../images/jascon01.png') no-repeat center; }
