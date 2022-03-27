@@ -976,7 +976,7 @@ padding-bottom:60%; /*16:9 56.25%*/
 @media screen and (min-width: 1299px) {
   .image.featured {
     display: block;
-    width: 120%;
+    width: 90%;
     margin: 0 -20 0 -20;
   }
 }
