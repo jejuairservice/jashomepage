@@ -18,8 +18,6 @@ def doc_detail(request, doc):
         path_template += 'ci.html'
     elif doc == 'ideology_vision':
         path_template += 'ideology_vision.html'
-    elif doc == 'business_introduction':
-        path_template += 'business_introduction.html'
     elif doc == 'jas_network':
         path_template += 'jas_network.html'
     elif doc == 'passenger':

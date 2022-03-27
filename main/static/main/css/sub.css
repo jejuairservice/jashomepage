@@ -4,13 +4,6 @@
 2022.04.01 ver, gwlee@aekyung.kr 수정
 ------------------------------------*/
 
-/****************
-**** default ****
-****************/
-
-/* body.subWrap {
-  margin-bottom: 250px;
-} */
 
 /****************
 ***** header ****
@@ -505,85 +498,6 @@ h4.titb {
   text-align: center;
 }
 
-/*sb02 - 비즈니스 소개 */
-.bnCon {
-  width: 100%;
-  height: 440px;
-  margin-bottom: 100px;
-}
-.bnCon:last-child {
-  margin-bottom: 0;
-}
-.bnCon dt {
-  width: 320px;
-  padding-top: 150px;
-  display: inline-block;
-  color: #f15922;
-  font-size: 46px;
-  font-weight: 600;
-  position: relative;
-}
-.bnCon dt span {
-  margin-top: 15px;
-  display: block;
-  color: #6a6a6a;
-  font-size: 28px;
-  font-weight: 400;
-}
-.bnCon dt .iBox {
-  width: 226px;
-  height: 55px;
-  position: absolute;
-  top: 77px;
-  right: -100px;
-  background: url('../images/img_bn_arr.png') no-repeat left center;
-}
-.bnCon dt .iBox:before {
-  width: calc(100% - 25px);
-  top: 27px;
-  left: inherit;
-  right: 0;
-}
-.bnCon dd {
-  width: calc(100% - 400px);
-  height: 100%;
-  float: right;
-  box-shadow: -40px 40px #f2f2f2;
-}
-.bnCon:nth-child(1) dd {
-  background: url('../images/jas_business01.jpg') no-repeat center;
-  background-size: cover;
-}
-.bnCon:nth-child(2) dd {
-  background: url('../images/jas_business02.jpg') no-repeat center;
-  background-size: cover;
-}
-.bnCon:nth-child(3) dd {
-  background: url('../images/jas_business03.jpg') no-repeat center;
-  background-size: cover;
-}
-.bnCon:nth-child(4) dd {
-  background: url('../images/jas_business04.jpg') no-repeat center;
-  background-size: cover;
-}
-.bnCon:nth-child(2n) dt {
-  text-align: right;
-  float: right;
-}
-.bnCon:nth-child(2n) dt .iBox {
-  left: -100px;
-  background: url('../images/img_bn_arr.png') no-repeat right center;
-}
-.bnCon:nth-child(2n) dt .iBox:before {
-  width: calc(100% - 25px);
-  top: 27px;
-  left: 0;
-  right: inherit;
-}
-.bnCon:nth-child(2n) dd {
-  float: left;
-  box-shadow: 40px 40px #f2f2f2;
-}
 
 /*sb02 - 지점 */
 .busi p.busiTxt{
